@@ -6,7 +6,7 @@ public class Main {
 
         String url = "jdbc:mysql://localhost:3306/college";
         String user = "root";
-        String password = "@ditya2006S";
+        String password = "MyNewPassword";
 
         try {
             Connection con = DriverManager.getConnection(url, user, password);
