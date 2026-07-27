@@ -6,11 +6,18 @@ public class Main {
 
         Connection con = DBConnection.getConnection();
 
-        if (con != null) {
+        if(con != null) {
             System.out.println("Database Connected Successfully!");
-        } else {
-            System.out.println("Database Connection Failed!");
         }
+        else {
+            System.out.println("Database Connection Failed!");
+            return;
+        }
+
+
+        StudentDAO dao = new StudentDAO();
+
+        dao.getAllStudents();
 
     }
 }
