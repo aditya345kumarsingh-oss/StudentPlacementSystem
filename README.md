@@ -1,17 +1,12 @@
-# 🎓 Student Placement Management System
+# Student Placement Management System
 
-A Java + MySQL project developed to manage student placement records. This project demonstrates Object-Oriented Programming (OOP), JDBC, and MySQL database operations.
+## 📌 Project Description
 
----
+The Student Placement Management System is a Java + MySQL based console application developed using JDBC.
 
-## 📌 Features
+The project helps manage student records, company details, and placement information.
 
-- Add a new student
-- View all students
-- Update student details (Coming Soon)
-- Delete student (Coming Soon)
-- Manage company records (Coming Soon)
-- Manage placements (Coming Soon)
+It demonstrates CRUD (Create, Read, Update, Delete) operations using Java Database Connectivity (JDBC).
 
 ---
 
@@ -21,111 +16,73 @@ A Java + MySQL project developed to manage student placement records. This proje
 - JDBC
 - MySQL
 - VS Code
-- Git & GitHub
+- Git
+- GitHub
 
 ---
 
 ## 📂 Project Structure
 
 ```
-StudentPlacementSystem/
+StudentPlacementSystem
 │
-├── src/
-│   ├── Main.java
+├── src
 │   ├── DBConnection.java
 │   ├── Student.java
-│   └── StudentDAO.java
+│   ├── StudentDAO.java
+│   └── Main.java
 │
-├── lib/
-│   └── mysql-connector-j.jar
-│
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 🚀 Project Progress
+## ✅ Completed Milestones
 
-### ✅ Milestone 1 – Project Setup
-- Java Project Created
-- MySQL Database Created
-- JDBC Driver Added
-- Database Connection Successful
+### Milestone 1
+- Project Setup
+- Database Connection
+- JDBC Connection
 
-### ✅ Milestone 2 – Student Module
-- Student Class Created
+### Milestone 2
+- Student Class
 - Constructors
-- Getters & Setters
-- Objects
-- Encapsulation
+- Getters
+- Setters
 
-### ✅ Milestone 3 – Student CRUD (Create & Read)
-- StudentDAO Created
-- Add Student to Database
-- View All Students
-- PreparedStatement
-- ResultSet
-- Exception Handling
+### Milestone 3
+Student CRUD Operations
 
-### 🔄 Upcoming Milestones
+- Create Student
+- Read Student
 - Update Student
 - Delete Student
+
+---
+
+## 🚀 Upcoming Milestones
+
 - Company Module
 - Placement Module
+- Search Features
 - Menu Driven Application
-- Validation & Exception Handling
+- Final Project Testing
 
 ---
 
-## 💻 Database
+## 📸 Current Features
 
-Database Name:
+✔ Add Student
 
-```
-placement_system
-```
+✔ View All Students
 
-Tables:
+✔ Update Student
 
-- student
-- company
-- placement
+✔ Delete Student
 
 ---
 
-## ▶️ How to Run
+## Author
 
-1. Install Java (JDK)
-2. Install MySQL
-3. Import the database
-4. Add MySQL JDBC Driver
-5. Open the project in VS Code
-6. Run `Main.java`
-
----
-
-## 📸 Current Output
-
-The application can:
-
-- Connect to MySQL
-- Insert a student into the database
-- Display all student records
-
----
-
-## 📈 Current Status
-
-**Milestone 3 Completed**
-
-Current Progress: **35%**
-
----
-
-## 👨‍💻 Author
-
-**Aditya Kumar Singh**
-
-B.Tech Computer Science Engineering
-
-Learning Java, JDBC, MySQL and Data Structures & Algorithms.
+Aditya Kumar Singh
