@@ -19,7 +19,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         StudentDAO dao = new StudentDAO();
 
-        System.out.println("\n===== Student Placement Management System =====");
+        System.out.println("Student Placement Management System ");
 
         System.out.println("1. Add Student");
         System.out.println("2. View All Students");
