@@ -1,16 +1,12 @@
-# Student Placement Management System
+# 🎓 Student Placement Management System
 
-## 📌 Project Description
+A Java + JDBC + MySQL based Student Placement Management System developed using VS Code.
 
-The Student Placement Management System is a Java + MySQL based console application developed using JDBC.
-
-The project helps manage student records, company details, and placement information.
-
-It demonstrates CRUD (Create, Read, Update, Delete) operations using Java Database Connectivity (JDBC).
+This project helps manage students, companies, and placement records using CRUD (Create, Read, Update, Delete) operations.
 
 ---
 
-## 🛠 Technologies Used
+## 🚀 Technologies Used
 
 - Java
 - JDBC
@@ -23,66 +19,99 @@ It demonstrates CRUD (Create, Read, Update, Delete) operations using Java Databa
 
 ## 📂 Project Structure
 
-```
-StudentPlacementSystem
-│
-├── src
-│   ├── DBConnection.java
-│   ├── Student.java
-│   ├── StudentDAO.java
-│   └── Main.java
-│
+StudentPlacementSystem/
+
+├── src/
+
+│ ├── Main.java
+
+│ ├── DBConnection.java
+
+│ ├── Student.java
+
+│ ├── StudentDAO.java
+
+│ ├── Company.java
+
+│ ├── CompanyDAO.java
+
+│ └── (Placement files will be added)
+
+├── lib/
+
+│ └── mysql-connector-j.jar
+
 ├── README.md
-└── .gitignore
-```
 
 ---
 
 ## ✅ Completed Milestones
 
-### Milestone 1
-- Project Setup
-- Database Connection
-- JDBC Connection
+### 🟢 Milestone 1 - Database Connection
 
-### Milestone 2
-- Student Class
-- Constructors
-- Getters
-- Setters
-
-### Milestone 3
-Student CRUD Operations
-
-- Create Student
-- Read Student
-- Update Student
-- Delete Student
+- Connected Java with MySQL using JDBC.
+- Successfully established database connection.
 
 ---
 
-## 🚀 Upcoming Milestones
+### 🟢 Milestone 2 - Student Module
 
-- Company Module
+#### Student CRUD
+
+- ✅ Add Student
+- ✅ View All Students
+- ✅ Update Student CGPA
+- ✅ Delete Student
+
+---
+
+### 🟢 Milestone 3 - Company Module
+
+#### Company CRUD
+
+- ✅ Add Company
+- ✅ View All Companies
+- ✅ Update Company Package
+- ✅ Delete Company
+
+---
+
+## 📌 Database Tables
+
+### Student
+
+- Student ID
+- Name
+- Email
+- Phone
+- Course
+- Branch
+- CGPA
+- Passing Year
+
+### Company
+
+- Company ID
+- Company Name
+- Location
+- Package (LPA)
+- Minimum CGPA
+
+---
+
+## 📅 Upcoming Milestones
+
 - Placement Module
-- Search Features
-- Menu Driven Application
-- Final Project Testing
+- Search Student by ID
+- Search Student by Name
+- View Student Placement Details
+- Admin Panel
+- Student Panel
+- Spring Boot Backend
+- HTML/CSS Frontend
 
 ---
 
-## 📸 Current Features
-
-✔ Add Student
-
-✔ View All Students
-
-✔ Update Student
-
-✔ Delete Student
-
----
-
-## Author
+## 👨‍💻 Developed By
 
 Aditya Kumar Singh
