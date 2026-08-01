@@ -48,6 +48,10 @@ public class Main {
         System.out.println("9. Add Placement");
         System.out.println("10. View All Placements");
 
+        System.out.println("11. Search Placement by Student ID");
+        System.out.println("12. Search Placement by Student Name");
+        System.out.println("13. Update Placement Status");
+
 
         System.out.println("\n0. Exit");
 
@@ -282,6 +286,46 @@ public class Main {
 
 
                 break;
+            }
+
+            case 11:{
+
+                  System.out.print("Enter Student ID : ");
+                  int searchId = sc.nextInt();
+
+                  placementDao.searchPlacementByStudentId(searchId);
+
+                 break;
+            }
+
+
+            case 12:{
+
+            sc.nextLine(); // Clear Buffer
+
+            System.out.print("Enter Student Name : ");
+            String studentName = sc.nextLine();
+
+          placementDao.searchPlacementByStudentName(studentName);
+
+          break;
+            }
+
+            case 13:{
+
+              System.out.print("Enter Placement ID : ");
+              int placementId = sc.nextInt();
+
+              sc.nextLine();
+
+              System.out.print("Enter New Status : ");
+               String newStatus = sc.nextLine();
+
+              placementDao.updatePlacementStatus(placementId, newStatus);
+
+             placementDao.getAllPlacements();
+
+             break;
             }
 
 
