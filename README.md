@@ -1,8 +1,6 @@
 # 🎓 Student Placement Management System
 
-A Java + JDBC + MySQL based Student Placement Management System developed using VS Code.
-
-This project helps manage students, companies, and placement records using CRUD (Create, Read, Update, Delete) operations.
+A Java + JDBC + MySQL based console application to manage students, companies, and placements.
 
 ---
 
@@ -12,74 +10,37 @@ This project helps manage students, companies, and placement records using CRUD 
 - JDBC
 - MySQL
 - VS Code
-- Git
-- GitHub
+- Git & GitHub
 
 ---
 
-## 📂 Project Structure
+## 📂 Features
 
-StudentPlacementSystem/
+### 👨‍🎓 Student Module
+- Add Student
+- View All Students
+- Update Student CGPA
+- Delete Student
 
-├── src/
+### 🏢 Company Module
+- Add Company
+- View All Companies
+- Update Company Package
+- Delete Company
 
-│ ├── Main.java
-
-│ ├── DBConnection.java
-
-│ ├── Student.java
-
-│ ├── StudentDAO.java
-
-│ ├── Company.java
-
-│ ├── CompanyDAO.java
-
-│ └── (Placement files will be added)
-
-├── lib/
-
-│ └── mysql-connector-j.jar
-
-├── README.md
+### 📋 Placement Module
+- Add Placement
+- View All Placements
+- Search Placement by Student ID
+- Search Placement by Student Name
+- Update Placement Status
+- Delete Placement
 
 ---
 
-## ✅ Completed Milestones
-
-### 🟢 Milestone 1 - Database Connection
-
-- Connected Java with MySQL using JDBC.
-- Successfully established database connection.
-
----
-
-### 🟢 Milestone 2 - Student Module
-
-#### Student CRUD
-
-- ✅ Add Student
-- ✅ View All Students
-- ✅ Update Student CGPA
-- ✅ Delete Student
-
----
-
-### 🟢 Milestone 3 - Company Module
-
-#### Company CRUD
-
-- ✅ Add Company
-- ✅ View All Companies
-- ✅ Update Company Package
-- ✅ Delete Company
-
----
-
-## 📌 Database Tables
+## 🗄 Database Tables
 
 ### Student
-
 - Student ID
 - Name
 - Email
@@ -90,25 +51,43 @@ StudentPlacementSystem/
 - Passing Year
 
 ### Company
-
 - Company ID
 - Company Name
 - Location
 - Package (LPA)
 - Minimum CGPA
 
+### Placement
+- Placement ID
+- Student ID
+- Company ID
+- Placement Date
+- Status
+
 ---
 
-## 📅 Upcoming Milestones
+## ✨ Key Concepts Used
 
-- Placement Module
-- Search Student by ID
-- Search Student by Name
-- View Student Placement Details
-- Admin Panel
-- Student Panel
-- Spring Boot Backend
-- HTML/CSS Frontend
+- Object-Oriented Programming (OOP)
+- JDBC Connectivity
+- MySQL Database
+- CRUD Operations
+- SQL JOIN
+- PreparedStatement
+- DAO (Data Access Object) Pattern
+
+---
+
+## 📸 Sample Output
+
+- Add Student
+- Add Company
+- Add Placement
+- View Placement Details
+- Search by Student ID
+- Search by Student Name
+- Update Placement Status
+- Delete Placement
 
 ---
 
