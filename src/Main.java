@@ -15,17 +15,35 @@ public class Main {
             return;
         }
 
-        // Create Scanner and DAO object
+        // Create Scanner
         Scanner sc = new Scanner(System.in);
+
+        // Create DAO Objects
         StudentDAO dao = new StudentDAO();
+        CompanyDAO companyDao = new CompanyDAO();
 
-        System.out.println("Student Placement Management System ");
+        System.out.println("====================================");
+        System.out.println(" Student Placement Management System");
+        System.out.println("====================================");
 
+        System.out.println("\n----- Student Module -----");
         System.out.println("1. Add Student");
         System.out.println("2. View All Students");
         System.out.println("3. Update Student CGPA");
         System.out.println("4. Delete Student");
-        System.out.println("5. Exit");
+
+        System.out.println("\n----- Company Module -----");
+        System.out.println("5. Add Company");
+        System.out.println("6. View All Companies");
+
+        System.out.println("\n----- Company Module -----");
+        System.out.println("5. Add Company");
+        System.out.println("6. View All Companies");
+        System.out.println("7. Update Company Package");
+
+       
+
+        System.out.println("\n0. Exit");
 
         System.out.print("\nEnter Your Choice : ");
         int choice = sc.nextInt();
@@ -34,7 +52,7 @@ public class Main {
 
             case 1:
 
-                sc.nextLine(); // Clear Buffer
+                sc.nextLine();
 
                 System.out.print("Enter Name : ");
                 String name = sc.nextLine();
@@ -88,7 +106,6 @@ public class Main {
                 double newCgpa = sc.nextDouble();
 
                 dao.updateStudentCGPA(id, newCgpa);
-
                 dao.getAllStudents();
 
                 break;
@@ -99,12 +116,61 @@ public class Main {
                 int deleteId = sc.nextInt();
 
                 dao.deleteStudent(deleteId);
-
                 dao.getAllStudents();
 
                 break;
 
             case 5:
+
+                sc.nextLine();
+
+                System.out.print("Enter Company Name : ");
+                String companyName = sc.nextLine();
+
+                System.out.print("Enter Company Location : ");
+                String location = sc.nextLine();
+
+                System.out.print("Enter Package (LPA) : ");
+                double packageLpa = sc.nextDouble();
+
+                System.out.print("Enter Minimum CGPA : ");
+                double minimumCgpa = sc.nextDouble();
+
+                Company company = new Company(
+                        0,
+                        companyName,
+                        location,
+                        packageLpa,
+                        minimumCgpa
+                );
+
+                companyDao.addCompany(company);
+                companyDao.getAllCompanies();
+
+                break;
+
+            case 6:
+
+                companyDao.getAllCompanies();
+
+                break;
+
+
+            case 7:
+
+                System.out.print("Enter Company ID : ");
+                int companyId = sc.nextInt();
+
+                System.out.print("Enter New Package (LPA) : ");
+                double newPackage = sc.nextDouble();
+
+                companyDao.updateCompanyPackage(companyId, newPackage);
+
+                companyDao.getAllCompanies();
+
+                break;
+
+            case 0:
 
                 System.out.println("Thank You!");
                 break;
